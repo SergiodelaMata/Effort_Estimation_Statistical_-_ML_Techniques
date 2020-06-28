@@ -18,7 +18,7 @@ library(caTools)
 library(h2o)
 library(bit64)
 library(tidyverse)
-file <- "D:\\User\\Escritorio\\albretch.csv"
+file <- "D:\\User\\Escritorio\\Effort_Estimation_Statistical_&_ML_Techniques\\Effort_Estimation_Statistical_-_ML_Techniques\\albretch.csv"
 data <- read.csv(file) #Building data frame from a dataset
 num_elements <- nrow(data) #Number of elements of the dataset
 data <- data[sample(num_elements),] #Randomly reordered

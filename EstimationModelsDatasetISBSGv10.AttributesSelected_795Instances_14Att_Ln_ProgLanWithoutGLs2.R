@@ -18,7 +18,7 @@ library(caTools)
 library(h2o)
 library(bit64)
 library(tidyverse)
-file <- "D:\\User\\Escritorio\\ISBSGv10.AttributesSelected_795Instances_14Att_Ln_ProgLanWithoutGLs2.csv"
+file <- "D:\\User\\Escritorio\\Effort_Estimation_Statistical_&_ML_Techniques\\Effort_Estimation_Statistical_-_ML_Techniques\\ISBSGv10.AttributesSelected_795Instances_14Att_Ln_ProgLanWithoutGLs2.csv"
 data <- read.csv(file) #Building data frame from a dataset
 num_elements <- nrow(data) #Number of elements of the dataset
 
