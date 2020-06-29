@@ -42,7 +42,7 @@ cov(datatest$NormalisedWorkEffortLevel1, datatest$FunctionalSize)
 #Linear regression
 lineal_regression <- lm(NormalisedWorkEffortLevel1~FunctionalSize, datatrain)
 predictions_lm <- predict(lineal_regression, datatest)
-#predictions_lm
+predictions_lm
 #Representation linear regression from data
 plot(lineal_regression)
 text(lineal_regression)
@@ -150,7 +150,7 @@ classifier <- h2o.deeplearning(y = 'NormalisedWorkEffortLevel1',
                                epochs = 100,
                                train_samples_per_iteration = -2)
 prediction_nnn <- t(h2o.predict(classifier, newdata = as.h2o(datatest)))
-#prediction_nnn
+prediction_nnn
 
 #-------------------------------------------------------------------------------
 #Accuracy error measures:
